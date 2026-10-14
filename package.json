@@ -1,0 +1,17 @@
+{
+  "name": "automation-job-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright tests for Applyground job application practice portal",
+  "scripts": {
+    "test": "playwright test --project=chromium",
+    "test:headless": "set HEADLESS=1&& playwright test --project=chromium",
+    "test:report": "playwright show-report",
+    "build:test-cases": "node scripts/build-test-cases-excel.js",
+    "postinstall": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "xlsx": "^0.18.5"
+  }
+}

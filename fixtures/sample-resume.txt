@@ -1,0 +1,2 @@
+Synthetic resume for Applyground local-only testing.
+No real personal data.
